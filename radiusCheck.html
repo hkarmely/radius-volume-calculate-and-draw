@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="radiusCheck.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="radiusCheck.css">
+
+    <title>בודק הרדיוסים של חן כרמלי</title>
+</head>
+
+<body onload="drawMax();">
+    <table class="container">
+        <tr class="row">
+            <td class="col">
+                <div>
+                    <h1>בודק הרדיוסים</h1></br>
+                </div>
+
+                <label for="fname">הכנס את רדיוס הכדור כאן (מספר בלבד)</label>
+                <br>
+                <input type="text" name="רדיוס" id="chenGetRaius" class="chenGetRaius" spanId="chen1" />
+                <span id="chen1"></span>
+                <button class="btn1 btn btn-primary mb-3" onclick='checkField(chenGetRaius)'>
+                    חשב נפח</button>
+                <br>
+                <h1>?האם נוכל לחשב את הנפח של הכדור </h1></br>
+                <br>
+                <span id="chen2PresentVolume"></span>
+                <Br></Br>
+
+
+                <h1>בואו נציג את הכדור על קנבס</h1></br>
+                </div>
+                <div>
+                    <button onclick="undraw()" class="btn1 btn btn-primary mb-3"> נקה את לוח הציור </button>
+                    <button onclick="drawInput()" class="btn1 btn btn-primary mb-3">הצג את הכדור</button>
+                    <br>
+                </div>
+            </td>
+
+
+            <td class="col">
+                <canvas id="myCanvas" width="600" height="600"></canvas>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>
+<!-- onclick='htmlValidation()' -->

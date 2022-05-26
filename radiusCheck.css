@@ -1,0 +1,17 @@
+body{
+    text-align:center;
+    text-decoration: rtl;
+}
+
+input{
+    padding:5px;
+    margin:20px;
+}
+
+textarea{
+    padding:15px;
+    padding-top:5px;
+}
+
+
+/* http://127.0.0.1:5500/%D7%9E%D7%A9%D7%99%D7%9E%D7%94%201%2028.6.21%20%D7%97%D7%9F%20%D7%9B%D7%A8%D7%9E%D7%9C%D7%99/radiusCheck.html */
